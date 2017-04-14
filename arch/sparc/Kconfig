@@ -1,0 +1,33 @@
+# Kconfig - SPARC architecture configuration options
+
+#
+# Copyright (c) 2017 Parrot S.A.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+choice
+	prompt "SPARC SoC Selection"
+	depends on SPARC
+
+	source "arch/sparc/soc/*/Kconfig.soc"
+endchoice
+
+menu "SPARC Options"
+	depends on SPARC
+
+config ARCH
+	default "sparc"
+
+config ARCH_DEFCONFIG
+	string
+	default "arch/sparc/defconfig"
+
+source "arch/sparc/core/Kconfig"
+
+menu "Board Configuration"
+
+source "arch/sparc/soc/*/Kconfig"
+
+endmenu
+endmenu

@@ -33,6 +33,9 @@ config RISCV32
 config XTENSA
 	bool "Xtensa architecture"
 
+config SPARC
+	bool "Sparc architecture"
+
 endchoice
 
 #

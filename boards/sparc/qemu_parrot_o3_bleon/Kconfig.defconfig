@@ -1,0 +1,6 @@
+if BOARD_QEMU_PARROT_O3_BLEON
+
+config BOARD
+	default "qemu_parrot_o3_bleon"
+
+endif

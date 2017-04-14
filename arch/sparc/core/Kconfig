@@ -1,0 +1,20 @@
+# Kconfig - SPARC core configuration options
+
+#
+# Copyright (c) 2017 Parrot S.A.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config CPU_LEON
+	bool
+	# Omit prompt to signify "hidden" option
+	default n
+	help
+	This option signifies the use of a CPU of the Leon family.
+
+if CPU_LEON
+
+source "arch/sparc/core/leon/Kconfig"
+
+endif

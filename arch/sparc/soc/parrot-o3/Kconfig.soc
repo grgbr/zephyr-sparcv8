@@ -1,0 +1,9 @@
+# Kconfig - Parrot Octopus 3 series selection
+
+#
+# Copyright (c) 2017 Parrot S.A.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+source "arch/sparc/soc/parrot-o3/*/Kconfig.series"

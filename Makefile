@@ -862,7 +862,7 @@ ASSERT_WARNING_STR := \
     "\n      --- The kernel will run more slowly and uses more memory ---" \
     "\n      ------------------------------------------------------------\n\n" \
 
-WARN_ABOUT_ASSERT := $(if $(CONFIG_ASSERT),echo -e -n $(ASSERT_WARNING_STR),true)
+WARN_ABOUT_ASSERT := $(if $(CONFIG_ASSERT),/bin/echo -e -n $(ASSERT_WARNING_STR),true)
 
 
 DEPRECATION_WARNING_STR := \

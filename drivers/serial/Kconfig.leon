@@ -1,0 +1,7 @@
+menuconfig UART_LEON
+	bool "Leon UART driver"
+	depends on CPU_LEON
+	default n
+	select SERIAL_HAS_DRIVER
+	help
+	Enable the Leon SoCs UART driver.

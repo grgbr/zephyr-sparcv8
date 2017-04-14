@@ -1,0 +1,11 @@
+# Kconfig - Parrot Octopus 3 Big Leon emulation board selection
+
+#
+# Copyright (c) 2017 Parrot S.A.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config BOARD_QEMU_PARROT_O3_BLEON
+        bool "Parrot Octopus3 Big Leon Emulation (Qemu)"
+        depends on SOC_PARROT_O3_BLEON_QEMU

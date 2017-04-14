@@ -1,0 +1,23 @@
+# Kconfig - Parrot Octopus 3 family options
+
+#
+# Copyright (c) 2017 Parrot S.A.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config SOC_FAMILY_PARROT_O3
+	bool
+	# omit prompt to signify a "hidden" option
+	default n
+
+if SOC_FAMILY_PARROT_O3
+
+config SOC_FAMILY
+	string
+	default "parrot-o3"
+	depends on SOC_FAMILY_PARROT_O3
+
+endif
+
+source "arch/sparc/soc/parrot-o3/*/Kconfig.soc"

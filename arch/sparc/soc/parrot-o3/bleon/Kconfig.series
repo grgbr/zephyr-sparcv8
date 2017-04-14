@@ -1,0 +1,24 @@
+# Kconfig - Parrot Octopus3 Big Leon options
+
+#
+# Copyright (c) 2017 Parrot S.A.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config SOC_SERIES_PARROT_O3_BLEON
+	bool "Parrot Octopus3 Big Leon SOC implementation"
+	depends on SPARC
+	select CPU_LEON
+	select CPU_LEON2
+	select SOC_FAMILY_PARROT_O3
+	help
+	Enable support for Parrot Octopus3 Big Leon SOC implementation
+
+if SOC_SERIES_PARROT_O3_BLEON
+
+config SOC_SERIES
+	string
+	default "bleon"
+
+endif

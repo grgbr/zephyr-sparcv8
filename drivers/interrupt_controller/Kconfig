@@ -124,6 +124,13 @@ config ARCV2_INTERRUPT_UNIT
 	building a processor, you can configure the processor to include an
 	interrupt unit. The ARCv2 interrupt unit is highly programmable.
 
+config LEON_PIRQ
+	bool "Leon primary interrupt controller"
+	default n
+	depends on CPU_LEON
+	help
+	Leon CPUs primary interrupt controller supports 15 lines.
+
 source "drivers/interrupt_controller/Kconfig.stm32"
 
 endmenu

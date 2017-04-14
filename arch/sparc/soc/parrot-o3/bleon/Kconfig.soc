@@ -1,0 +1,17 @@
+# Kconfig - Parrot Octopus3 Big Leon selection
+
+#
+# Copyright (c) 2017 Parrot S.A.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+choice
+prompt "Parrot Octopus3 Big Leon SOC implementation"
+depends on SOC_SERIES_PARROT_O3_BLEON
+
+config SOC_PARROT_O3_BLEON_QEMU
+	bool "Parrot Octopus3 Big Leon QEMU SOC implementation"
+
+endchoice
+

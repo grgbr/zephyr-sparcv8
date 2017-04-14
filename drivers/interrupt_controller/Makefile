@@ -8,3 +8,4 @@ obj-$(CONFIG_LOAPIC_SPURIOUS_VECTOR) += loapic_spurious.o
 obj-$(CONFIG_ARCV2_INTERRUPT_UNIT) += arcv2_irq_unit.o
 
 obj-$(CONFIG_SOC_FAMILY_STM32) += exti_stm32.o
+obj-$(CONFIG_LEON_PIRQ) += leon_pirq.o

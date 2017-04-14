@@ -2,6 +2,7 @@ obj-$(CONFIG_HPET_TIMER) += hpet.o
 obj-$(CONFIG_LOAPIC_TIMER) += loapic_timer.o
 obj-$(CONFIG_ARCV2_TIMER) += arcv2_timer0.o
 obj-$(CONFIG_ALTERA_AVALON_TIMER) += altera_avalon_timer.o
+obj-$(CONFIG_LEON_TIMER) += leon_timer.o
 obj-$(CONFIG_NRF_RTC_TIMER) += nrf_rtc_timer.o
 obj-$(CONFIG_PULPINO_TIMER) += pulpino_timer.o
 obj-$(CONFIG_RISCV_MACHINE_TIMER) += riscv_machine_timer.o

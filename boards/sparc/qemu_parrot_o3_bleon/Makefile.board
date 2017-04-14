@@ -1,0 +1,10 @@
+EMU_PLATFORM = qemu
+
+QEMU_CPU_TYPE_sparc = LEON2
+QEMU_FLAGS_sparc = -machine parrot-o3-bleon -nographic
+QEMU_sparc = qemu-system-sparc
+
+DEBUG_SCRIPT = qemu.sh
+
+debugserver: QEMU_EXTRA_FLAGS += -s -S
+debugserver: qemu

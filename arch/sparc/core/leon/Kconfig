@@ -1,0 +1,41 @@
+# Kconfig - SPARC Leon cores configuration options
+
+#
+# Copyright (c) 2017 Parrot S.A.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config CPU_LEON3
+        bool
+        # Omit prompt to signify "hidden" option
+        help
+        This option signifies the use of a Leon3 CPU
+
+config CPU_LEON2
+        bool
+        # Omit prompt to signify "hidden" option
+        help
+        This option signifies the use of a Leon2 CPU
+
+config	NUM_IRQS
+	int
+	default 15
+	help
+	  Number of available interrupts.
+
+config GEN_ISR_TABLES
+        default y
+
+config GEN_IRQ_VECTOR_TABLE
+        default n
+
+config GEN_SW_ISR_TABLE
+        default y
+
+config LEON_PIRQ
+        default y
+
+config ATOMIC_OPERATIONS_C
+	# implement me !!
+	default y
